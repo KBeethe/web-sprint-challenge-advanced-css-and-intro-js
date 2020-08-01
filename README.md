@@ -23,9 +23,13 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. How would you describe acessibility on the web to someone new to programming?
+    Accessibility is how someone with a legal disability, such as blindness or with cognitive disabilities,  can view web pages. Accessibility allows everyone to have access to the internet and everything on it. 
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+    One of the easiest things you can do to make your website accessible is to add alternate descriptions to all of your photographs. This way if someone cannot visually SEE the photograph, the computer can read your alternate description of the photo. The second thing you can do is to be wary of color choices. Don't have colors that are too close to each other as those can be difficult to read for anyone. Make your font stand apart from the background. A third way you can make your website more accessible is to design your website with screen readers in mind. Make sure to format your code so that the screen reader will be able to go through without being confusing on your code. 
 3. How would you explain the concept of a variable to someone new to programming?
+    A variable in programming is much like one in mathematics. Variables allow us to declare the name of something. Example: We would like to put something into the website called "Monkeys". We can declare that variable with the keywords of "var", "let", and "const". These allow us to have access to that particular value again later on. It is preferred to use "let" & "const" as "var" can be re-declared multiple times and can cause issues in your JavaScripting.
 4. What is the purpose of using functions in code?
+    Functions are used to perform a specific task. They are a block of code that you can assign a name to invoke or "call" that particular set of code. This helps to avoid having multiple lines of code repeating something that was stated before. Keeping your code "DRY" (Don't Repeat Yourself)
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -45,7 +49,7 @@ Follow these steps to set up your project:
 *Before you jump in, take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built. During this time, [Review the provided design files](design/). You have been provided all content necessary in the [index.html file](index.html) and basic styling in the [index.css file](css/index.css).*
 
 * [X] Add a viewport meta tag to the head of your index.html page.
-* [ ] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
+* [X] Add responsive breakpoints to your code for 500px such that your styles match the [mobile design file](design/Mobile.png).
 
 ### Task 2b: Minimum Viable Product - JavaScript
 
@@ -57,7 +61,7 @@ After finishing your required elements, you can push your work further. These go
 
 * [ ] Website is responsive at multiple breakpoints and looks good in-between breakpoints because student is using responsive units of measurement where appropriate. Student is using most semantic HTML for each element on page and has included ARIA roles where applicable (More research may be required to impliment ARIA roles)  
 * [ ] Student demonstrates and can explain a deep understanding of basic programming concepts, when walking Team Lead through the explaination of their code.
-* [ ] Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
+* [ ] Use advanced array methods (.map, .reduce, .filter) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) - do this seperate from your MVP tasks
 
 
 ## Resources
@@ -72,6 +76,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master

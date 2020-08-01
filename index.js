@@ -245,7 +245,7 @@ function getArtistByIndex(array, index) {
     for (let i = 0; i == 1900-2000; i++)
     return(get20s());
   }
-    console.log(get20s());
+    get20s();
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -259,11 +259,11 @@ function getArtistByIndex(array, index) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, index) {
-    let artists.splice(artists.splice(index));
-    console.log(artists)
+    // let artists.splice(artists.splice(index));
+    console.log(artists.splice(index))
   }
   
- removeArtist(artists, 7)
+ removeArtist(artists, 13)
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -293,14 +293,15 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-  let massArtists = []  
-  
-  if (paintings > 100){
-    massArtists.push;
+  for(let i = 0; i <= array[index].paintings-1; i++){
+    if(array[index].paintings >= "100"){
+     return ${array[index].name}`;
+    }else{
+      return `${array[index].name}`;
+    }
   }
-}
 
-lotsOfArt(artists);
+  lotsOfArt(artists);
 
 // 🎨🎨 STRETCH 🎨🎨//
 
