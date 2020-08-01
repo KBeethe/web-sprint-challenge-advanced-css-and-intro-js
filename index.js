@@ -228,8 +228,10 @@ console.log(artists[8].name);
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+    return `The artist at index ${artists[index].id} is ${artists[index].name}.`
   }
+
+  getArtistByIndex(artists, 16);
   
   /**
 
@@ -253,11 +255,12 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
+function removeArtist(array, index) {
+    let artists.splice(artists.splice(index));
+    console.log(artists)
   }
   
- 
+ removeArtist(artists, 7)
 
 /**
 /* Task 6: Create a function called `addArtist` that can accept an object of information and add it to the artists array. Then, add a 21st artist to the array (you) with custom information!👩‍🎨👨‍🎨
@@ -272,11 +275,11 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
-    /* Code here */
-
+function addArtist(array, id, name, years, genre, nationality, bio){
+    array.push({id, name, years, genre, nationality, bio})
   }
+
+addArtist(artists, id: 20, name: "Kathryn Beethe", years: "1991-current day", genre: "Web Design", nationality: "Out of this World", bio: "Kathryn Beethe (BEE-THEE) is a young crafter with nothing left to lose. She hopes to help the world become a better place where she can with the time she can.")
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -286,9 +289,7 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
+function lotsOfArt(array){
 
 }
 
