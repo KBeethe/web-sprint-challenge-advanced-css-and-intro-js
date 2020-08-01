@@ -136,11 +136,18 @@ button:hover{
 }
 
 @media (max-width: 500px){
+
+    .title-container div {
+        width: 100%;
+    }
+    
     .artists-container{
         flex-direction: column;
     }
     
     .artist{
-        
+        width: 80%;
+        margin-left: 10%;
     }
+
 }
