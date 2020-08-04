@@ -240,12 +240,21 @@ function getArtistByIndex(array, index) {
    in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return 
    ["Salvador Dali", "Frida Kahlo"]*/
 
-   function get20s(artists){
-    data = [name, years]
-    for (let i = 0; i == 1900-2000; i++)
-    return(get20s());
+   function get20s(data) {
+
+    let artists20s = [];
+  
+    for (let i = 0; i < data.length; i++) {
+      const yearBorn = parseInt(data[i].years.substr(0, 4));
+      const yearDead = parseInt(data[i].years.substr(-4));
+      if (yearBorn >= 1900 && yearDead <= 2000) {
+        artists20s.push(data[i].name);
+      }
+    }
+    return artists20s;
   }
-    get20s();
+  
+  console.log("Artists from the 20th century:", get20s(artists));
 
 
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
@@ -259,7 +268,6 @@ function getArtistByIndex(array, index) {
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
 function removeArtist(array, index) {
-    // let artists.splice(artists.splice(index));
     console.log(artists.splice(index))
   }
   
@@ -279,10 +287,10 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 At the end, this function should return the new array with information added"*/
 
 function addArtist(array, id, name, years, genre, nationality, bio){
-    array.push({id, name, years, genre, nationality, bio})
+    array.push(id, name, years, genre, nationality, bio)
   }
 
-addArtist(artists, id: 20, name: "Kathryn Beethe", years: "1991-current day", genre: "Web Design", nationality: "Out of this World", bio: "Kathryn Beethe (BEE-THEE) is a young crafter with nothing left to lose. She hopes to help the world become a better place where she can with the time she can.")
+addArtist(artists, "id":20, "name":"Kathryn Beethe", "years":"1991-current day", "genre":"Web Design", "nationality": "Out of this World", "bio": "Kathryn Beethe BEE-THEE is a young crafter with nothing left to lose. She hopes to help the world become a better place where she can with the time she can.")
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -295,11 +303,12 @@ For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte
 function lotsOfArt(array){
   for(let i = 0; i <= array[index].paintings-1; i++){
     if(array[index].paintings >= "100"){
-     return ${array[index].name}`;
+     return `${array[index].name}`;
     }else{
       return `${array[index].name}`;
     }
   }
+}
 
   lotsOfArt(artists);
 
@@ -326,20 +335,20 @@ The function should console.log 50 chunks of HTML code that match the structure 
 
 ‼️ You do **NOT** need to get these to display on your page, but you can copy and paste the result into your HTML file if you'd like to see what that would look like. */
 
-function getHTML(/* Code here */){
+// function getHTML(/* Code here */){
 
-    /* Code here */
+//     /* Code here */
 
-  }
+//   }
 
 
 /* STRETCH 2: Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
+// function randomize(/* Code here */){
 
-    /* Code here */
+//     /* Code here */
 
-  }
+//   }
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filter) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
